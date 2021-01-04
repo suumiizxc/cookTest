@@ -7,7 +7,7 @@
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "watch": "webpack --watch",
-    "start:dev": "webpack-dev-server"
+    "start:dev": "webpack-dev-server --open"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +23,7 @@
     "webpack-dev-server": "^3.10.1"
   },
   "dependencies": {
-    "@babel/polyfill": "^7.12.1"
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.1"
   }
 }

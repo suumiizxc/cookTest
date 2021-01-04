@@ -1,9 +1,7 @@
-const arr = [23, 46 ,55];
+require("@babel/polyfill");
 
-let myFunc = a =>{
-    console.log("too : " + a);
-}
+import Search from './model/Search';
 
-const arr2 = [...arr, 44,55];
+let search = new Search('pasta');
 
-myFunc(arr2);
+search.doSearch().then((result)=> console.log(result));
